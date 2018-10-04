@@ -25,15 +25,23 @@ end
 # -- 2 -- Calcul du nombre d'handle avec un numéro
 
 def nbre_numero (array)
-	puts "Nombre de noms de journalistes ayant un numéro :"
-	array.count (Integer)
+	return array.count("0-9")>0
 end
 
+def compte (array)
+    if test == true 
+    puts array.count
+    end
+end
 # -- 7 -- Trie de la liste
 def trie (array)
 	puts "Noms journalistes rangées par ordre alphabétique :"
 	puts array.sort
 end
 
-nbre_numero(handles)
+def resultat
+result = handles.select {|journalist|nbre_numero(journalist)}
+puts result.length
+end
 
+resultat
