@@ -111,6 +111,7 @@ def perform
 
     
     puts "Listes des questions"
+    puts ""
     puts "1 - Combien y a t'il de journalistes dans cet array ?"
     puts "2 - Combien d'handle contiennent un numéro ?"
     puts "3 - Combien d'handle contiennent les 4 lettres du prénom \"Aude\" à la suite ?"
